@@ -34,7 +34,7 @@ public class HelloWorld{
 				if(Integer.parseInt(rawArr[j][0]) > Integer.parseInt(rawArr[j+1][0]))
 				{
 				    for(int k = 0; k < 4; k++){
-                        temp = rawArr[j][k];
+                        		temp = rawArr[j][k];
 				    	rawArr[j][k] = rawArr[j+1][k];
 				    	rawArr[j+1][k] = temp;				        
 				    }
@@ -42,8 +42,8 @@ public class HelloWorld{
 			}
 		}
 		
-		System.out.println("Sorted array is \n");
-		for(int i = 0; i < 5; i++){
+	    System.out.println("Sorted array is \n");
+	    for(int i = 0; i < 5; i++){
             for(int j = 0; j < 4; j++){
                 System.out.print(rawArr[i][j]+" ");
             }
